@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+ /* ------------------------PORTFLOW-FIRST------------------------ */
+
+.portflow{
+
+    width:100%; 
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.portflow-title{
+
+    width: 20%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1{
+
+    width: 100%;
+    height: 100%;
+    padding: 7% 0;
+
+    font-weight: 900;
+
+    font-size: 2.5vw;
+
+    text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu-nav{
+
+    width: 10%;
+    height: 10vh;
+    background-color: black;
+
+    position: absolute;
+    top: 1%;
+    right: 1%;
+
+    opacity: 0%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+
+}
+
+.line-up, .line-middle, .line-down{
+
+    width: 20%;
+    height: 0.5vh;
+    margin-bottom: 3%;
+
+    background-color: white;
+
+    
+}
+
+.portflow-nav{
+    
+    width:35%;
+    height: 100%;
+    margin: 1% 0 1% 32%;
+
+}
+
+nav{
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul{
+
+    width: 95%;
+    height: 100%;
+    
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+li{
+
+    width: 100%;
+    height: 100%;
+    margin:1%;
+    padding: 3.5% 0;
+
+    font-size: 1.2vw;
+    font-weight:100;
+
+    position: relative;
+
+    text-align: center;
+    list-style: none;
+
+
+}
+
+
+li:hover{
+
+    width: 100%;
+    height: 100%;
+
+    font-weight: bolder;
+
+    color: #f3a43e;
+
+    transform: scale(1.3);
+    cursor: pointer;
+    
+
+}
+/* -----------------PORTFLOW-SECOND--------------------------- */
+
+.portflow-conteiner{
+
+    width: 100%;
+    height: 80vh;
+    padding-left: 7%;
+
+    background-image: url("imgs-portflow/portflow-fundo/laranja\ azul\ recorte@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+h2{
+
+    width: 100%;
+    height: 18%;
+    font-size: 5vw;
+    font-weight: bolder;
+
+    color: white;
+    cursor: pointer;
+
+    animation: forwards 3s slide;
+    animation-delay: 2.5s;
+    opacity: 0;
+}
+
+.fale-p{
+
+    width: 100%;
+  
+    cursor: pointer;
+
+    font-size: 1.7vw;
+    color: white;
+
+    animation: forwards .5s slide;
+    animation-delay: 2s;
+    opacity: 0;
+}
+
+
+/* ----------------------------PORTFLOW-IMAGENS---------------------------- */
+
+.portflow-box{
+
+    width: 100%;
+    padding: 5% 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+.img-box{
+
+    width: 83.5%;
+    height: 100%;
+    padding-bottom: 1%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+
+img{
+
+    width: 24%;
+    height: 100%;
+
+ 
+}
+
+img:hover{
+
+    transform: scale(1.05);
+    opacity: 90%;
+    cursor: pointer;
+}
+
+/* -------------------REDES--------------------------- */
+
+.rede-conteiner{
+
+    width: 100%;
+    padding:2% 0 2% 8% ;
+
+    background-color: #e2e2e2;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.redes-box{
+
+    width: 30%;
+    height: 6vh;
+    padding:0.6% 0 0.6% 0;
+
+    display: flex;
+
+}
+
+.redes-img{
+
+    width: 50%;
+    height: 100%;
+
+}
+
+.copy-conteiner{
+
+    margin-right: 10%;
+
+}
+
+.copy-p{
+
+    padding-top: 0.5%;
+
+    font-size: 1.5vw;
+    font-weight: bolder;
+
+    
+   
+    color: black;
+
+    position: relative;
+    z-index: 4;
+}
+
+.copy-p:hover{
+    
+    color: #f3a43e;
+    cursor: pointer;
+}
+
+.copy-p::before{
+
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    border-top:  solid #f3a43e;
+    border-bottom: solid #f3a43e;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translate(20%);
+    
+    opacity: 0;
+
+}
+
+.copy-p:hover::before{
+
+    transform: translate(0%);
+    transition: all .7s ease;
+    color: white;
+    opacity: 100%;
+    z-index: -2;
+    
+}
+
+button{
+
+    display:none ;
+}
+
+@keyframes slide{
+
+    from{
+
+        transform:translatex(-50%);
+        opacity: 0;
+    }
+
+    to{
+
+        transform:translatex(0%);
+        opacity: 100%;
+
+    }
+}
+
+
+/* ---------------MOBILE------------------------------ */
+
+@media (max-width:500px){
+
+    .portflow{
+
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    h1{
+        width: 100%;
+        font-size: 4vw;
+    }
+
+    .portflow-conteiner{
+
+        width: 100%;
+        height: 100vh;
+
+        background-position: 83%;
+        background-size: cover;
+
+        display: flex;
+        align-items;
+        justify-content: flex-end;
+
+        position: relative;
+
+    }
+
+
+    h2{
+
+        width:65%;
+        height: 32%;
+
+        font-size: 14vw;
+        font-weight: bolder;
+
+        position: absolute;
+        top:40%;
+       
+    }
+
+
+    .fale-p{
+
+        width:30%;
+        font-size: 4vw;
+
+        position: absolute;
+        left: 8%;
+        bottom: 9%;
+    }
+
+    /* --------Main------------- */
+
+
+    .portflow-box{
+
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .img-box{
+
+        width: 100vw;
+        height: 100%;
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    img{
+
+        width:80vw;
+        height: 80%;
+        padding-bottom: 5%;
+        order: ;
+
+    }
+
+    .rede-conteiner{
+
+        width:100%;
+        padding: 2% 10%;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .redes-box{
+
+        width: 100%;
+        padding: 0.%;
+
+    }
+
+    .redes-img{
+
+        width: 50vw;
+        height: 100%;
+        padding: 0;
+    }
+
+    .rede-p::before{
+
+        content: "";
+        width: 100%;
+
+    }
+
+    .copy-conteiner{    
+
+        width: 100%;
+        height: 100%;
+        padding-top: 3%;
+
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .rede-p{
+
+        font-size: 3vw;
+    }
+
+    button{
+
+        width: 20%;
+        height: 100%;
+        padding: 1% 0;
+
+        background-color: #000744;
+
+        border: none;
+
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width:325px){
+
+    h2{
+        padding-top:35% ;
+    }
+
+    .fale-p{
+
+        position: absolute;
+        bottom: 4%;
+    }
+}
